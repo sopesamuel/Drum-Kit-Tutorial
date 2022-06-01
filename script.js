@@ -11,12 +11,12 @@ for (var j = 0; j < numberOfButtons; j++) {
 
       sound(buttonStyle); 
 
-  }); 
+  }
 }
 document.addEventListener("keypress", function(event) { 
 
   sound(event.key);
-  });
+  }
   
 
 function sound(key) { 
