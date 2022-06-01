@@ -1,29 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta http-equiv="X-UA-compatible" content="ie=edge">
-<title>First Project</title>
-<link href="style.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-<h1> DRUM KIT </h1>
-<div class="keys">
-<button id= "button" onclick = "audio.play(m.mp3);"> S</button>
-<button id= "button" onclick = "audio.play(o.mp3);"> A</button>
-<button id= "button" onclick = "audio.play(s.mp3);"> M</button>
-<button id= "button" onclick = "audio.play(z.mp3);"> U</button>
-<button id= "button" onclick = "audio.play(p.mp3);"> E</button>
-<button id= "button" onclick = "audio.play(e.mp3);"> L</button>
-</div>
+<body>
+
+<h1>The Drum Kit</h1> 
+
+  <div class="keys">
+  
+       <button class="S button">S</button> 
+       <button class="A button">A</button> 
+       <button class="M button">M</button> 
+       <button class="U button">U</button> 
+       <button class="E button">E</button> 
+       <button class="L button">L</button> 
+  </div>
 
 
-<script src="script.js"> </script>
+<script src="script.js"></script>
 
+  <audio data-key="83" src="hihat.wav"></audio>
+  <audio data-key="65" src="clap.wav"></audio>
+  <audio data-key="77" src="kick.wav"></audio>
+  <audio data-key="85" src="openhat.wav"></audio>
+  <audio data-key="69" src="boom.wav"></audio>
+  <audio data-key="76" src="ride.wav"></audio>
+  
 
-<h3> Start playing! </h3>
+<script>
+
+</script>
+
 
 </body>
 </html>

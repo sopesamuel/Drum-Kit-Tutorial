@@ -1,49 +1,56 @@
-var numberofdrumbuttons =document.querySelectorAll(".keys");
 
-function makesound(key){
-	switch(key){
-		case "S";
-		var S = new Audio("m.mp3");
-      S.play();
-      break;
-	}
-	  switch(key){
-		case "A";
-		var A = new Audio("o.mp3");
-      A.play();
-      break;
-	  }
-	  
-	  switch(key){
-		case "M";
-		var M = new Audio("s.mp3");
-      M.play();
-      break;
-	  }
-	  
-	  switch(key){
-		case "U";
-		var U = new Audio("z.mp3");
-      U.play();
-      break;
-	  }
-	  
-	  switch(key){
-		case "E";
-		var E = new Audio("p.mp3");
-      E.play();
-      break;
-	  }
-	  
-	  switch(key){
-		case "L";
-		var L = new Audio("e.mp3");
-      L.play();
-      break;
-	  }
+var numberOfButtons = document.querySelectorAll("button").length; 
 
-default: console.log(key);
+for (var j = 0; j < numberOfButtons; j++) { 
 
+  document.querySelectorAll("button")[j] 
 
-	  }
-	  
+    .addEventListener("click", function() { 
+
+      var buttonStyle = this.innerHTML; 
+
+      sound(buttonStyle); 
+
+  }); 
+}
+document.addEventListener("keypress", function(event) { 
+
+  sound(event.key);
+  });
+  
+
+function sound(key) { 
+  switch (key) { 
+    case "S": 
+      var sound1 = new Audio("boom.wav"); 
+      sound1.play(); 
+      break; 
+
+    case "A": 
+      var sound2 = new Audio("clap.wav"); 
+      sound2.play(); 
+      break; 
+
+    case "M": 
+      var sound3 = new Audio("hihat.wav"); 
+      sound3.play(); 
+      break; 
+
+    case "U": 
+      var sound4 = new Audio("kick.wav"); 
+      sound4.play(); 
+      break; 
+
+    case "E": 
+      var sound5 = new Audio("openhat.wav"); 
+      sound5.play(); 
+      break; 
+
+    case "L": 
+      var sound6 = new Audio("ride.wav"); 
+      sound6.play(); 
+      break; 
+
+    default: console.log(key); 
+  } 
+} 
