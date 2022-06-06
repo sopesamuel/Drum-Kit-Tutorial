@@ -1,22 +1,22 @@
 body {
-  text-align: center;
-  background: url('drum.jpg');
-  background-size: cover;
-}
-
-h1 { 
-    color: #008B8B; 
-    font-size: 40px; 
-}
-
-button{
-	font-family: serif;
-	font-size: 55px;
-	font-weight: 900;
-	text-shadow: 1.5px 2px#00008B;
-	border: 5px solid #800000;;
-	border-radius: 15px;
-	margin: 20px;
-	width: 80px;
-	height: 80px;
-}
+    text-align: center;
+    background: url('drum.jpg');
+    background-size: cover;
+  }
+  
+  h1 { 
+      color: #008B8B; 
+      font-size: 40px; 
+  }
+  
+  button{
+      font-family: serif;
+      font-size: 55px;
+      font-weight: 900;
+      text-shadow: 1.5px 2px#00008B;
+      border: 5px solid #800000;;
+      border-radius: 15px;
+      margin: 20px;
+      width: 80px;
+      height: 80px;
+  }
